@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./img/icons/favicon_fotogram.png">
+
+    <title>Fotogram - Fotogalerie</title>
+
+    <script src="./script.js"></script>
+</head>
+
+<body onload="renderImages()">
+    <header>
+        <nav>
+            <img src="./img/logo_fotogram.svg" alt="Fotogram Logo">
+        </nav>
+    </header>
+
+    <div id="content"></div>
+
+    <div id="overlay" class="overlay d_none " >
+
+        <div class="img_overlay">
+            <button onclick="closeDialog()" class="nav_button left" >❌</button>
+            <p id="imgtitle"></p>
+            <button onclick="backImg()" class="nav_button left" >◀️</button>
+            <img id="overlayimg" src="" alt="">
+            <button onclick="nextImg()" class="nav_button right" >▶️</button>
+        </div>
+
+    </div>
+    <footer>
+        <img src="./img/logo_fotogram - no-text.svg" alt="logo">
+        <div>© 2025 Raul Ciucalau</div>
+    </footer>
+</body>
+
+</html>

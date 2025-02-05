@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #263e58;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(51, 95, 148);
+    display: flex;
+    align-items: center;
+    height: 112px;
+    padding: 12px 42px;
+}
+
+nav img {
+    width: 220px;
+}
+
+#content {
+    padding: 20px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+#content img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+#content img:hover {
+    box-shadow: 1px 1px 20px whitesmoke;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.img_overlay{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.img_overlay img {
+    width: 100%;
+    max-width: 700px;
+}
+
+p {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    background-color: #263e58;
+    padding: 14px 64px;
+}
+
+
+
+.nav_button {
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.navigate-btn.left {
+    left: 0;
+}
+
+.navigate-btn.right {
+    right: 0;
+}
+
+.nav_button.close {
+    left: 0;
+    right: 0;
+    top: 36px;
+}
+
+footer {
+    background-color: rgb(20, 37, 58);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 121px;
+    
+}
+
+footer img {
+    width: 80px;
+    object-fit: contain;
+}
+
+.d_none {
+    display: none;
+}
+
+@media (max-width: 704px ) {
+    #content img {
+        width: 140px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 501px ) {
+    header {
+      padding: 12px 14px;  
+    }
+
+    #content {
+        padding: 20px 14px;
+    }
+    
+    #content img {
+        width: 138px;
+        height: 120px;
+    }
+
+    p {
+        padding: 14px 8px;
+    }
+}
+
+@media (max-width: 409px ) {
+    #content img {
+        width: 114px;
+        height: 120px;
+    }
+}

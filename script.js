@@ -1,5 +1,7 @@
 
 
+
+// Array of image paths for the gallery
 let imgs = [
     "img/a0.jpg",
     "img/a1.jpg",
@@ -15,6 +17,7 @@ let imgs = [
     "img/a11.jpg"
 ];
 
+// Array of descriptions corresponding to each image
 let imgDescription = [
     "Schnee auf den Spitzen",
     "Winterberge im Morgenlicht",
@@ -33,7 +36,7 @@ let imgDescription = [
 
 let currentIndex = 0;
 
-
+// Function to render all images in the gallery
 function renderImages() {
     let container = document.getElementById("content");
     for (let index = 0; index < imgs.length; index++) {
